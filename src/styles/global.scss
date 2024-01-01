@@ -1,0 +1,97 @@
+:root {
+    --r-background-color: hsl(30, 100%, 98%);
+    --r-main-color: hsl(30, 100%, 4%, 0.8);
+
+    --r-main-font: "Vazirmatn", sans-serif;
+    --r-main-font-size: 1.5rem;
+
+    --r-heading-color: hsl(30, 100%, 4%);
+    --r-heading-font: "Vazirmatn", sans-serif;
+    --r-heading1-size: 2em;
+    --r-heading2-size: 1.8em;
+    --r-heading3-size: 1.4em;
+    --r-heading-font-weight: 700;
+    --r-heading4-size: 0.7em;
+
+    --r-link-color: hsl(30, 100%, 50%);
+    --r-link-color-hover: hsl(30, 100%, 40%);
+
+    --r-selection-background-color: hsl(30, 100%, 50%);
+    --r-selection-color: hsl(30, 100%, 98%);
+
+    --color-container: hsl(30, 100%, 85%);
+    --color-container-index: hsl(30, 100%, 60%);
+
+    --border-radius: 0.4rem;
+}
+
+html {
+}
+
+html,
+.reveal.rtl .slides,
+.reveal.rtl .slides h1,
+.reveal.rtl .slides h2,
+.reveal.rtl .slides h3,
+.reveal.rtl .slides h4,
+.reveal.rtl .slides h5,
+.reveal.rtl .slides h6,
+.reveal .slide-number {
+    font-family: "Vazirmatn", sans-serif;
+}
+
+.reveal .slide-number {
+    background-color: transparent;
+
+    font-size: 1rem;
+
+    .slide-number-a {
+        color: var(--r-main-color);
+    }
+}
+
+img.icon {
+    width: auto;
+    height: 2em;
+
+    vertical-align: middle;
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none;
+
+        margin-block-end: 1rem;
+
+        &::before {
+            --size: 1.2em;
+
+            content: "";
+
+            background-image: url("/src/assets/icons/check-mark.png");
+            background-size: var(--size);
+
+            display: inline-block;
+
+            width: var(--size);
+            height: var(--size);
+
+            vertical-align: middle;
+
+            margin-inline-end: 0.5rem;
+        }
+    }
+}
+
+.qr-code {
+    width: 16rem;
+    height: 16rem;
+}
+
+.icon {
+    &.reverse {
+        transform: scaleX(-1);
+    }
+}
